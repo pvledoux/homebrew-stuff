@@ -7,8 +7,8 @@ class Ansible < Formula
   depends_on 'asciidoc'
   depends_on 'distutils2' => :python
   depends_on 'paramiko' => :python
-  depends_on 'PyYAML' => :python
-  depends_on 'Jinja2' => :python
+  depends_on 'pyyaml' => :python
+  depends_on 'jinja2' => :python
 
   def install
     system "PREFIX=#{prefix} make install"
