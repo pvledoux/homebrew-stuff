@@ -12,6 +12,6 @@ class Ansible < Formula
   depends_on 'jinja2' => :python
 
   def install
-    system "/usr/local/bin/python setup.py install --prefix='#{prefix}' --exec-prefix='#{prefix}'"
+    system "/usr/local/bin/python setup.py install --prefix='#{prefix}' --exec-prefix='#{prefix}' --install-data=#{prefix}/share/ansible"
   end
 end
