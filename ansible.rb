@@ -5,12 +5,13 @@ class Ansible < Formula
   head 'https://github.com/ansible/ansible.git', :using => :git
 
 #  depends_on 'asciidoc'
-  depends_on 'distutils2' => :python
+  depends_on 'python'
+#  depends_on 'distutils2' => :python
   depends_on 'paramiko' => :python
 #  depends_on 'pyyaml' => :python
   depends_on 'jinja2' => :python
 
   def install
-    system "PREFIX=#{prefix} /usr/bin/make install"
+    system "/usr/local/bin/python setup.py install --prefix='#{prefix}'"
   end
 end
