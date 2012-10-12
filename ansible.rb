@@ -11,6 +11,6 @@ class Ansible < Formula
   depends_on 'jinja2' => :python
 
   def install
-    system "PREFIX=#{prefix} make install"
+    system "PREFIX=#{prefix} /usr/bin/make install"
   end
 end
