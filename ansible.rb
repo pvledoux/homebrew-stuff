@@ -5,7 +5,7 @@ class Ansible < Formula
   head 'https://github.com/ansible/ansible.git', :using => :git
 
   depends_on 'paramiko' => :python
-  depends_on 'pyyaml' => :python
+#  depends_on 'pyyaml' => :python
   depends_on 'jinja2' => :python
 
   def install
