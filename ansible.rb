@@ -12,6 +12,9 @@ class Ansible < Formula
     inreplace 'lib/ansible/constants.py' do |s| 
       s.gsub! /\/usr\/share\/ansible\//, '/usr/local/share/ansible/'
     end
+    
     system "/usr/local/bin/python setup.py install --prefix='#{prefix}' --exec-prefix='#{prefix}'"
+    
+    (share+'ansible').install Dir['library/*']
   end
 end
