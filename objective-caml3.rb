@@ -1,6 +1,6 @@
 require 'formula'
 
-class ObjectiveCaml < Formula
+class ObjectiveCaml3 < Formula
   homepage 'http://www.ocaml-lang.org'
   url 'http://caml.inria.fr/pub/distrib/ocaml-3.12/ocaml-3.12.1.tar.gz'
   sha1 '05125da055d39dd6fe8fe5c0155b2e9f55c10dfd'

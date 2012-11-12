@@ -1,6 +1,6 @@
 require 'formula'
 
-class Unison < Formula
+class Unison240 < Formula
   url 'http://www.seas.upenn.edu/~bcpierce/unison/download/releases/unison-2.40.63/unison-2.40.63.tar.gz'
   homepage 'http://www.cis.upenn.edu/~bcpierce/unison/'
   sha1 '645e70bc37a5d4e8e9ccb7bad065fc579b18cf75'
