@@ -3,8 +3,8 @@ require 'formula'
 class Ansible < Formula
   homepage 'http://ansible.github.com/'
   head 'https://github.com/ansible/ansible.git', :using => :git
-  url 'https://github.com/ansible/ansible/archive/v1.1.tar.gz'
-  sha1 '4cb93186eda0b140c0d170c55ed3917c8f57d8a0'
+  url 'https://github.com/ansible/ansible/archive/v1.2.tar.gz'
+  sha1 '73bdf1c007f546004d7ceed6c74a6c090fe1c1d0'
 
   depends_on 'python'
   depends_on 'paramiko' => :python
